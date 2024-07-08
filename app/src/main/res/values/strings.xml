@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Food Panda</string>
+    <string name="login">LOGIN</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="login1">Login</string>
+    <string name="new_user_create_account">New User? Create Account</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="enter_user_name">Enter User Name</string>
+    <string name="enter_email1">Enter Email</string>
+    <string name="enter_password1">Enter Password</string>
+    <string name="enter_password_again">Enter Password Again</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="enter_location">Enter Location</string>
+    <string name="log_out">Log Out</string>
+    <string name="home_page_of_foodpanda">Home page of foodpanda</string>
+    <string name="a_mouth_watering_pizza_with_mozzarella_cheese_pepperoni_and_fresh_basil">A mouth-watering pizza with mozzarella cheese, pepperoni, and fresh basil.</string>
+    <string name="delicious_pizza">Delicious Pizza</string>
+    <string name="delivery_time_30_minutes">Delivery Time: 30 minutes</string>
+    <string name="additional_includes_garlic_bread_and_a_soft_drink">Additional: Includes garlic bread and a soft drink</string>
+    <string name="order_now">Order Now</string>
+    <string name="call_and_confirm_me">Call and Confirm me</string>
+    <string name="cancel_entire_order">Cancel entire order</string>
+    <string name="remove_it_from_my_order">Remove it from my order</string>
+    <string name="if_this_item_is_not_available_then">If this item is not available then:</string>
+    <string name="_500rs">500Rs</string>
+    <string name="price">Price:</string>
+    <string name="kfc_iqbal_town">KFC Iqbal Town</string>
+    <string name="location">Location:</string>
+    <string name="_30_minutes">30 minutes</string>
+    <string name="est_delivery_time">Est Delivery Time:</string>
+</resources>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cartmain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d60e64"
+    tools:context=".activity_signup">
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo1"
+        app:tint="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tvsignuptext"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#FFFFFF"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:paddingTop="30dp"
+        android:text="@string/sign_up"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv1"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="396dp"
+        android:layout_height="490dp"
+        android:layout_marginBottom="68dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv1"
+        app:layout_constraintVertical_bias="0.274">
+
+        <EditText
+            android:id="@+id/etusernamesign"
+            android:layout_width="370dp"
+            android:layout_height="74dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="#FFFFFF"
+            android:drawableRight="@drawable/baseline_account_circle_24"
+            android:ems="10"
+            android:gravity="center|left"
+            android:hint="@string/enter_user_name"
+            android:inputType="textCapWords"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="#FFFEFE"
+            android:textColorHint="#FFFFFF"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etemailsignup"
+            android:layout_width="370dp"
+            android:layout_height="74dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="#FFFFFF"
+            android:drawableRight="@drawable/emailasset"
+            android:ems="10"
+            android:gravity="center|left"
+            android:hint="@string/enter_email1"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="#FFFEFE"
+            android:textColorHint="#FFFFFF"
+            android:textSize="15sp"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/etpasswordsign"
+            android:layout_width="370dp"
+            android:layout_height="74dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="#FFFFFF"
+            android:drawableRight="@drawable/padlock_2889676"
+            android:ems="10"
+            android:gravity="center|left"
+            android:hint="@string/enter_password1"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="#FFFEFE"
+            android:textColorHint="#FFFFFF"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etLocation"
+            android:layout_width="370dp"
+            android:layout_height="74dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="#FFFFFF"
+            android:drawableRight="@drawable/location"
+            android:ems="10"
+            android:gravity="center|left"
+            android:hint="@string/enter_location"
+            android:inputType="textCapWords"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="#FFFEFE"
+            android:textColorHint="#FFFFFF"
+            android:textSize="15sp"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/eTCONTACTNO"
+            android:layout_width="370dp"
+            android:layout_height="74dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="#FFFFFF"
+            android:drawableRight="@drawable/call_1034131"
+            android:ems="10"
+            android:gravity="center|left"
+            android:hint="@string/enter_phone_number"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="#FFFEFE"
+            android:textColorHint="#FFFFFF"
+            android:textSize="15sp"
+            tools:ignore="LabelFor" />
+
+        <!-- New LinearLayout for Checkboxes -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/userGroup"
+                android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/deliveryBoy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Delivery Boy"
+                android:textColor="#FFFFFF" />
+
+                <RadioButton
+                android:id="@+id/other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Other"
+                android:textColor="#FFFFFF" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/btnCancelsignup"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="80dp"
+            android:backgroundTint="#AF043E"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textColor="#FFFFFF"
+            android:textSize="23dp" />
+
+        <Button
+            android:id="@+id/btnLoginsignup"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="80dp"
+            android:backgroundTint="#AF043E"
+            android:gravity="center"
+            android:text="Sign up"
+            android:textColor="#FFFFFF"
+            android:textSize="23dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
